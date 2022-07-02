@@ -1,0 +1,921 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>شركة مكة لنقل الاثاث 01011978449</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="people.png" rel="icon" sizes="512x512" type="image/png">
+<link href="base/jquery-ui.min.css" rel="stylesheet">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cairo:400,900&subset=arabic,latin-ext&display=swap" rel="stylesheet">
+<link href="mostafamekka.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="wb.panel.min.js"></script>
+<script src="util.min.js"></script>
+<script src="carousel.min.js"></script>
+<script src="skrollr.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="jquery.ui.effect-bars.min.js"></script>
+<script src="wb.slideshow.min.js"></script>
+<script src="wb.photocollage.min.js"></script>
+<script src="wb.parallax.min.js"></script>
+<link rel="stylesheet" href="magnificpopup/magnific-popup.css">
+<script src="magnificpopup/jquery.magnific-popup.min.js"></script>
+<script src="wwb17.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#wb_Text1').addClass('visibility-hidden');
+   $('#wb_LayoutGrid2').addClass('visibility-hidden');
+   $('#wb_Divider3').addClass('visibility-hidden');
+   $('#wb_PhotoCollage1').addClass('visibility-hidden');
+   $('#wb_Divider4').addClass('visibility-hidden');
+   $('#wb_skills').addClass('visibility-hidden');
+   $('#wb_LayoutGrid6').addClass('visibility-hidden');
+   $('#wb_Divider5').addClass('visibility-hidden');
+   $('#wb_LayoutGrid4').addClass('visibility-hidden');
+   $('#wb_Image1').addClass('visibility-hidden');
+   $('#wb_Heading1').addClass('visibility-hidden');
+   $('#wb_Text2').addClass('visibility-hidden');
+   $('#wb_Shape1').addClass('visibility-hidden');
+   $('#wb_LayoutGrid5').addClass('visibility-hidden');
+   $('#wb_Image3').addClass('visibility-hidden');
+   $('#wb_LayoutGrid7').addClass('visibility-hidden');
+   $('#wb_Text11').addClass('visibility-hidden');
+   $('#wb_Text14').addClass('visibility-hidden');
+   $("#PanelMenu1").panel({animate: true, animationDuration: 200, animationEasing: 'linear', dismissible: true, display: 'push', position: 'top', toggle: true, overlay: true});
+   $("#Carousel1").bootstrapcarousel({interval:1500, pause: false});
+   function onScrollText1()
+   {
+      var $obj = $("#wb_Text1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Text1', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Text1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Text1').inViewPort(true))
+   {
+      $('#wb_Text1').addClass("in-viewport");
+   }
+   onScrollText1();
+   $(window).scroll(function(event)
+   {
+      onScrollText1();
+   });
+   function onScrollLayoutGrid2()
+   {
+      var $obj = $("#wb_LayoutGrid2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid2', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid2').inViewPort(true))
+   {
+      $('#wb_LayoutGrid2').addClass("in-viewport");
+   }
+   onScrollLayoutGrid2();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid2();
+   });
+   function skrollrInit()
+   {
+      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   }
+   skrollrInit();
+   function onScrollDivider3()
+   {
+      var $obj = $("#wb_Divider3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Divider3', 'transform-bounce-in-left', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Divider3', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Divider3').inViewPort(true))
+   {
+      $('#wb_Divider3').addClass("in-viewport");
+   }
+   onScrollDivider3();
+   $(window).scroll(function(event)
+   {
+      onScrollDivider3();
+   });
+   $("#SlideShow1").slideshow(
+   {
+      interval: 3250,
+      type: 'sequence',
+      effect: 'bars',
+      direction: 'random',
+      count: 30,
+      pagination: false,
+      fullscreen: 4,
+      maxWidth: 1500,
+      easing: 'easeInElastic',
+      effectlength: 2000
+   });
+   $("a[data-rel='PhotoCollage1']").attr('rel', 'PhotoCollage1');
+   $("#PhotoCollage1").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
+   $("#PhotoCollage1").photocollage({ effect: 'css', duration: 1100, padding: 4, lazyload: true, matrix: '1,1,2,0,1,1,0,0,2,0,1,1,0,0,1,1' });
+   function onScrollPhotoCollage1()
+   {
+      var $obj = $("#wb_PhotoCollage1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_PhotoCollage1', 'transform-bounce-in-left', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_PhotoCollage1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_PhotoCollage1').inViewPort(true))
+   {
+      $('#wb_PhotoCollage1').addClass("in-viewport");
+   }
+   onScrollPhotoCollage1();
+   $(window).scroll(function(event)
+   {
+      onScrollPhotoCollage1();
+   });
+   function onScrollDivider4()
+   {
+      var $obj = $("#wb_Divider4");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Divider4', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Divider4', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Divider4').inViewPort(true))
+   {
+      $('#wb_Divider4').addClass("in-viewport");
+   }
+   onScrollDivider4();
+   $(window).scroll(function(event)
+   {
+      onScrollDivider4();
+   });
+   $("a[href*='#skills']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_skills').offset().top }, 600, 'linear');
+   });
+   function onScrollskills()
+   {
+      var $obj = $("#wb_skills");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_skills', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_skills', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_skills').inViewPort(true))
+   {
+      $('#wb_skills').addClass("in-viewport");
+   }
+   onScrollskills();
+   $(window).scroll(function(event)
+   {
+      onScrollskills();
+   });
+   function onScrollLayoutGrid6()
+   {
+      var $obj = $("#wb_LayoutGrid6");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid6', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid6', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid6').inViewPort(true))
+   {
+      $('#wb_LayoutGrid6').addClass("in-viewport");
+   }
+   onScrollLayoutGrid6();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid6();
+   });
+   function onScrollDivider5()
+   {
+      var $obj = $("#wb_Divider5");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Divider5', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Divider5', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Divider5').inViewPort(true))
+   {
+      $('#wb_Divider5').addClass("in-viewport");
+   }
+   onScrollDivider5();
+   $(window).scroll(function(event)
+   {
+      onScrollDivider5();
+   });
+   function onScrollLayoutGrid4()
+   {
+      var $obj = $("#wb_LayoutGrid4");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid4', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid4', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid4').inViewPort(true))
+   {
+      $('#wb_LayoutGrid4').addClass("in-viewport");
+   }
+   onScrollLayoutGrid4();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid4();
+   });
+   $('#wb_LayoutGrid4').parallax();
+   function onScrollImage1()
+   {
+      var $obj = $("#wb_Image1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Image1', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Image1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Image1').inViewPort(true))
+   {
+      $('#wb_Image1').addClass("in-viewport");
+   }
+   onScrollImage1();
+   $(window).scroll(function(event)
+   {
+      onScrollImage1();
+   });
+   function onScrollHeading1()
+   {
+      var $obj = $("#wb_Heading1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Heading1', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Heading1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Heading1').inViewPort(true))
+   {
+      $('#wb_Heading1').addClass("in-viewport");
+   }
+   onScrollHeading1();
+   $(window).scroll(function(event)
+   {
+      onScrollHeading1();
+   });
+   function onScrollText2()
+   {
+      var $obj = $("#wb_Text2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Text2', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Text2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Text2').inViewPort(true))
+   {
+      $('#wb_Text2').addClass("in-viewport");
+   }
+   onScrollText2();
+   $(window).scroll(function(event)
+   {
+      onScrollText2();
+   });
+   function onScrollShape1()
+   {
+      var $obj = $("#wb_Shape1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Shape1', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Shape1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Shape1').inViewPort(true))
+   {
+      $('#wb_Shape1').addClass("in-viewport");
+   }
+   onScrollShape1();
+   $(window).scroll(function(event)
+   {
+      onScrollShape1();
+   });
+   function onScrollLayoutGrid5()
+   {
+      var $obj = $("#wb_LayoutGrid5");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid5', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid5', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid5').inViewPort(true))
+   {
+      $('#wb_LayoutGrid5').addClass("in-viewport");
+   }
+   onScrollLayoutGrid5();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid5();
+   });
+   function onScrollImage3()
+   {
+      var $obj = $("#wb_Image3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Image3', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Image3', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Image3').inViewPort(true))
+   {
+      $('#wb_Image3').addClass("in-viewport");
+   }
+   onScrollImage3();
+   $(window).scroll(function(event)
+   {
+      onScrollImage3();
+   });
+   function onScrollLayoutGrid7()
+   {
+      var $obj = $("#wb_LayoutGrid7");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_LayoutGrid7', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_LayoutGrid7', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_LayoutGrid7').inViewPort(true))
+   {
+      $('#wb_LayoutGrid7').addClass("in-viewport");
+   }
+   onScrollLayoutGrid7();
+   $(window).scroll(function(event)
+   {
+      onScrollLayoutGrid7();
+   });
+   function onScrollText11()
+   {
+      var $obj = $("#wb_Text11");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Text11', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Text11', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Text11').inViewPort(true))
+   {
+      $('#wb_Text11').addClass("in-viewport");
+   }
+   onScrollText11();
+   $(window).scroll(function(event)
+   {
+      onScrollText11();
+   });
+   function onScrollText14()
+   {
+      var $obj = $("#wb_Text14");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Text14', 'transform-bounce-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Text14', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Text14').inViewPort(true))
+   {
+      $('#wb_Text14').addClass("in-viewport");
+   }
+   onScrollText14();
+   $(window).scroll(function(event)
+   {
+      onScrollText14();
+   });
+   $("#Progressbar1").progressbar(
+   {
+      value: 99
+   });
+   $("#Progressbar2").progressbar(
+   {
+      value: 1
+   });
+   $("#Progressbar3").progressbar(
+   {
+      value: 0
+   });
+   $("#Progressbar4").progressbar(
+   {
+      value: 0
+   });
+   $("#Progressbar5").progressbar(
+   {
+      value: 0
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_PageHeader">
+<div id="PageHeader">
+<div class="row">
+<div class="col-1">
+<div id="wb_PanelMenu1">
+<a href="#PanelMenu1_markup" id="PanelMenu1">&nbsp;</a>
+<div id="PanelMenu1_markup">
+<ul role="menu">
+   <li role="menuitem"><a href="#LayoutGrid2" class="nav-link">&#1575;&#1604;&#1585;&#1574;&#1610;&#1587;&#1610;&#1577;</a></li>
+   <li role="menuitem"><a href="#LayoutGrid5" class="nav-link">&#1593;&#1606; &#1575;&#1604;&#1588;&#1585;&#1603;&#1577;</a></li>
+   <li role="menuitem"><a href="#LayoutGrid8" class="nav-link">&#1582;&#1583;&#1605;&#1575;&#1578; &#1575;&#1604;&#1588;&#1585;&#1603;&#1577;</a></li>
+   <li role="menuitem"><a href="#LayoutGrid9" class="nav-link">&#1578;&#1608;&#1575;&#1589;&#1604; &#1605;&#1593;&#1606;&#1575;</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Image2">
+<img src="images/sama-movers-logo-1.png" id="Image2" alt="" width="616" height="246">
+</div>
+<div id="wb_Text13">
+<span style="color:#000000;font-family:Arial;font-size:13px;line-height:24px;"><br></span><span style="color:#000000;font-family:'Cairo';font-weight:900;font-size:17px;line-height:24px;">شركة </span><span style="color:#FFD700;font-family:'Cairo';font-weight:900;font-size:17px;line-height:24px;">مكة</span><span style="color:#000000;font-family:'Cairo';font-weight:900;font-size:17px;line-height:24px;"> لنقل وتغليف الأثاث<br></span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_Text12">
+<span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"><br><br></span><span style="color:#000000;font-family:Cairo;font-size:16px;line-height:24px;"><strong>إتصل اليوم&nbsp; </strong></span><span style="color:#000080;font-family:Cairo;font-size:16px;line-height:24px;"><strong>01011978449&nbsp; -&nbsp; 01009342317</strong></span><span style="color:#000000;font-family:Cairo;font-size:16px;line-height:16px;"><strong><br></strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Carousel1">
+<div id="Carousel1" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item frame-1 active">
+<div class="carousel-innerframe">
+</div>
+</div>
+<div class="carousel-item frame-2">
+<div class="carousel-innerframe">
+</div>
+</div>
+<div class="carousel-item frame-3">
+<div class="carousel-innerframe">
+</div>
+</div>
+</div>
+<a class="carousel-item-left carousel-control" href="#Carousel1" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span>
+</a>
+<a class="carousel-item-right carousel-control" href="#Carousel1" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1-overlay"></div>
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text1">
+<span style="color:#000000;font-family:Cairo;font-size:16px;line-height:24px;">شركة مكة لنقل الأثاث لديها خبرة كافية في مجال النقل , بالاضافة الي انها تمتلك جميع الامكانيات والمعدات والأدوات والطاقة البشرية التي مكنتها من تقديم خدمة نقل عفش مميزة علي أعلي مستوي مستوي يليق عملائها.<br><br>تتمثل تلك الامكانيات في أحدثوأفضل أجهزة النقل,&nbsp; وأفضل الادوات التي تستخدم في نقل العفش من عدد وأدوات يدوية لحمل الاثاث مثل أشرطة الكتف , وأحدث أدوات فك وتركيب الاثاث, كذلك أجهزة مخصصة لحمل العفش مثل الاوناش الهيدروليكية والاوناش الكهربية و متسلق السلالم الكهربائي , وكذلك أحدث سيارات نقل الاثاث المغلقة منها والمفتوح حتي تقدم الشركة في النهاية خددمة نقل أثاث لا يعلي عليها</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2" data-bottom-top="transform:;" data-top="transform:;">
+<div id="LayoutGrid2-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+<path class="divider-fill" d="m 500,40.86 c 0,0 22.91,59.14 144.4,59.14 H 1000 V 0 H 0 V 100 H 355.6 C 477.09,100 500,40.86 500,40.86 Z" />
+</svg></div>
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<ul id="SlideShow1">
+<li><img class="image" loading="lazy" width="3556" height="2000" src="images/s1.jpg" alt="" title=""></li>
+<li><img class="image" loading="lazy" width="3556" height="2000" src="images/s2.jpg" style="display:none;" alt="" title=""></li>
+<li><img class="image" loading="lazy" width="3556" height="2000" src="images/s3.jpg" style="display:none;" alt="" title=""></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Divider3">
+<div id="Divider3-overlay"></div>
+<div id="Divider3">
+<hr id="DividerLine3">
+<div id="wb_Heading4">
+<h2 id="Heading4">شركة مكة لنقل وتغليف العفش</h2>
+</div>
+<hr id="DividerLine4">
+</div>
+</div>
+<div id="wb_LayoutGrid9">
+<div id="LayoutGrid9-divider-top">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+<path class="divider-fill" d="m 500,40.86 c 0,0 22.91,59.14 144.4,59.14 H 1000 V 0 H 0 V 100 H 355.6 C 477.09,100 500,40.86 500,40.86 Z" />
+</svg></div>
+<div id="LayoutGrid9">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text11">
+<span style="color:#000000;font-family:Cairo;font-size:16px;line-height:24px;">تقوم شركة مكة باعتبارها واحدة من افضل شركات نقل الاثاث بالمقطم بوضع خطة مدروسة قبل البدء في عملية النقل حتي تسهل العملية علي العمال , فبمجرد اتصال العميل لطلب الخدمة يذهب المندوب الي المكان المحدد لمعاينة الموبيليا ومعرفة موقع الشقة وهل سيحتاج الأمر الي وجود أوناش هيدروليكية ام لا , ومعرفة ميعاد تسليم الشقة والعفش مفروش , وكذلك التكلفة النهائية للنقل .<br></span><span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;"><br></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_PhotoCollage1">
+<div id="PhotoCollage1">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="images/117361235_171114901222055_1323009311216674629_n.jpg" data-rel=""><img alt="" src="images/117361235_171114901222055_1323009311216674629_n.jpg" loading="lazy" class="image" width="305" height="229"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/149025629_361638374942616_3655175475628510167_n.jpg" data-rel=""><img alt="" src="images/149025629_361638374942616_3655175475628510167_n.jpg" loading="lazy" class="image" width="305" height="229"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/155526645_121624893298148_492851497350533593_n.jpg" data-rel=""><img alt="" src="images/155526645_121624893298148_492851497350533593_n.jpg" loading="lazy" class="image" width="305" height="407"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/14359159_182244905536231_1922657488026221976_n.jpg" data-rel=""><img alt="" src="images/14359159_182244905536231_1922657488026221976_n.jpg" loading="lazy" class="image" width="305" height="407"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/16266038_682064808631324_18820082362272675_n.jpg" data-rel=""><img alt="" src="images/16266038_682064808631324_18820082362272675_n.jpg" loading="lazy" class="image" width="305" height="172"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/tn_13179322_149091225494133_8983372853043901262_n.jpg" data-rel=""><img alt="" src="images/tn_13179322_149091225494133_8983372853043901262_n.jpg" loading="lazy" class="image" width="305" height="228"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/48377157_2188959634755028_2999303549743005696_n.jpg" data-rel=""><img alt="" src="images/48377157_2188959634755028_2999303549743005696_n.jpg" loading="lazy" class="image" width="305" height="407"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/117361235_171114901222055_1323009311216674629_n.jpg" data-rel=""><img alt="" src="images/117361235_171114901222055_1323009311216674629_n.jpg" loading="lazy" class="image" width="305" height="229"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/120008750_175324220795634_4234302949487716833_n.jpg" data-rel=""><img alt="" src="images/120008750_175324220795634_4234302949487716833_n.jpg" loading="lazy" class="image" width="305" height="508"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/72321857_2377876299129711_4934077864371814400_n.jpg" data-rel=""><img alt="" src="images/72321857_2377876299129711_4934077864371814400_n.jpg" loading="lazy" class="image" width="305" height="555"></a>
+      </div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Divider4">
+<div id="Divider4">
+<hr id="DividerLine5">
+<div id="wb_Heading5">
+<h2 id="Heading5">شركة مكة لنقل وتغليف الأثاث</h2>
+</div>
+<hr id="DividerLine7">
+</div>
+</div>
+<div id="wb_LayoutGrid10">
+<div id="LayoutGrid10">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text14">
+<span style="color:#000000;font-family:Cairo;font-size:16px;line-height:24px;">الكثير منا عندما يفكر في الانتقال الي مسكن جديد يفكر في كيفية نقل كل القطع الكبيرة والصغيرة وانزالها من الادوار العالية دون ان تتعرض لاي ضرر , لكن مع ونش رفع الأثاث الذي توفره شركة مكة باعتبارها واحدة من افضل شركات نقل عفش بالجيزة اصبح الامر في غاية السهولة لان هذه الاوناش تستطيع ان تصل الي الادوار الشاهقة&nbsp; وتقوم بانزال القطع الكبيرة التي يصعب تفكيكها ورفعها بكل سهولة ويسر دون ان تتعرض لأي خدش أو كسر&nbsp; كما كان يحدث عند انزاله او رفعه عن طريق المصاعد والمداخل الضيقة , وبذلك شركة مكة افضل شركة نقل عفش بمصر تضمن لك توصيل عفش منزلك أو فيلتك أو شقتك أو شركتك او حتي مكتبك لاي مكان في مصر مهما كانت المسافة بعيدة دون تلف أو خدش صغير , فلا ترهق نفسك او تضيع وقت في عناء عمليات النقل واترك ذلك لشركة متخصصة وذو خبرة في مجال نقل العفش كشركة مكة افضل شركة نقل عفش فى مصر.<br></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_skills">
+<div id="skills">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text5">
+<span style="color:#8B0000;font-family:Cairo;font-size:32px;"><strong>أراء عملائنا</strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="row">
+<div class="col-1">
+<label for="" id="Label1">اراء عملائنا</label>
+<div id="wb_FontAwesomeIcon1">
+<div id="FontAwesomeIcon1"><i class="fa fa-star"></i></div>
+</div>
+<div id="wb_FontAwesomeIcon6">
+<div id="FontAwesomeIcon6"><i class="fa fa-star"></i></div>
+</div>
+<div id="wb_FontAwesomeIcon7">
+<div id="FontAwesomeIcon7"><i class="fa fa-star"></i></div>
+</div>
+<div id="wb_FontAwesomeIcon8">
+<div id="FontAwesomeIcon8"><i class="fa fa-star"></i></div>
+</div>
+<div id="wb_FontAwesomeIcon9">
+<div id="FontAwesomeIcon9"><i class="fa fa-star-half-o"></i></div>
+</div>
+<label for="" id="Label2"></label>
+<hr id="Line1">
+<div id="wb_LayoutGrid11">
+<div id="LayoutGrid11">
+<div class="row">
+<div class="col-1">
+<label for="" id="Label3">5 star</label>
+</div>
+<div class="col-2">
+<div id="Progressbar1" >
+</div>
+</div>
+<div class="col-3">
+<label for="" id="Label8">150</label>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid12">
+<div id="LayoutGrid12">
+<div class="row">
+<div class="col-1">
+<label for="" id="Label4">4 star</label>
+</div>
+<div class="col-2">
+<div id="Progressbar2" >
+</div>
+</div>
+<div class="col-3">
+<label for="" id="Label9">63</label>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid13">
+<div id="LayoutGrid13">
+<div class="row">
+<div class="col-1">
+<label for="" id="Label5">3 star</label>
+</div>
+<div class="col-2">
+<div id="Progressbar3" >
+</div>
+</div>
+<div class="col-3">
+<label for="" id="Label10">15</label>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid14">
+<div id="LayoutGrid14">
+<div class="row">
+<div class="col-1">
+<label for="" id="Label6">2 star</label>
+</div>
+<div class="col-2">
+<div id="Progressbar4" >
+</div>
+</div>
+<div class="col-3">
+<label for="" id="Label11">6</label>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid15">
+<div id="LayoutGrid15">
+<div class="row">
+<div class="col-1">
+<label for="" id="Label7">1 star</label>
+</div>
+<div class="col-2">
+<div id="Progressbar5" >
+</div>
+</div>
+<div class="col-3">
+<label for="" id="Label12">20</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Divider5">
+<div id="Divider5">
+<hr id="DividerLine8">
+<div id="wb_Heading3">
+<h2 id="Heading3">افضل شركة نقل عفش بمصر</h2>
+</div>
+<hr id="DividerLine9">
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4-overlay"></div>
+<div id="LayoutGrid4-divider-top">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+<path class="divider-fill" d="M0,0L7.068,24.243L12.188,20.293L21.301,47.175L29.023,40.343L34.609,59.393L41.648,57.164L50,78.657L57.999,57.421L65.293,68.034L70.389,60.483L77.5,37.3L83.22,40.343L88.438,27.707L92.622,33.007L100,0L100,100L0,100L0,0z" style="fill-opacity:0.5;"/>
+<path class="divider-fill" d="M0,0L4.845,30.295L12.188,25.364L17.509,60.102L29.023,50.421L34.609,74.243L41.648,71.45L50.218,93.962L58.435,71.466L64.683,79.379L69.779,73.938L77.5,46.629L83.22,50.421L88.438,34.636L94.322,41.1L100,0L100,100L0,100L0,0z"/>
+</svg></div>
+<div id="LayoutGrid4-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+<path class="divider-fill" d="M0,0L7.068,24.243L12.188,20.293L21.301,47.175L29.023,40.343L34.609,59.393L41.648,57.164L50,78.657L57.999,57.421L65.293,68.034L70.389,60.483L77.5,37.3L83.22,40.343L88.438,27.707L92.622,33.007L100,0L100,100L0,100L0,0z" style="fill-opacity:0.5;"/>
+<path class="divider-fill" d="M0,0L4.845,30.295L12.188,25.364L17.509,60.102L29.023,50.421L34.609,74.243L41.648,71.45L50.218,93.962L58.435,71.466L64.683,79.379L69.779,73.938L77.5,46.629L83.22,50.421L88.438,34.636L94.322,41.1L100,0L100,100L0,100L0,0z"/>
+</svg></div>
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Image1">
+<img src="images/164345221_3939913116067105_5100557662519613549_n.jpg" id="Image1" alt="" title="600x400" width="451" height="451">
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Heading1">
+<h1 id="Heading1">أفضل شركة نقل فى مصر</h1>
+</div>
+<div id="wb_Text2">
+<span style="color:#FFFFFF;">تنفرد شركة مكةبأكبر فريق عمل في مصر متخصص في مختلف أعمال النقل , لديه خبرة كبيرة في هذا المجال , كما أن الشركة تزودهم بأحدث الأدوات , منهم النجاريين والفنيين وفنيين الكهرباء , وجميعهم ذو خبرة كبيرة في أعمال النقل من فك وتركيب غرف نوم وغرف أطفال و مطابخ وأجهزة كهربائية وستائر وتكييفات وجميع محتويات المنزل , كما أن لديهم خبرة كبيرة في أعمال التغليف و تنزيل ورفع العفش وتحميله داخل سيارات النقل بنظام وبطرق معينة تضمن وصوله الي اي مكان بأمان دون أن يحدث له أي ضرر.</span>
+</div>
+<div id="wb_Shape1">
+<a href="tel:01011978449"><img src="images/img0001.png" id="Shape1" alt="" width="102" height="44"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5-overlay"></div>
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image3">
+<img src="images/istockphoto-1170514169-612x612.jpg" id="Image3" alt="" width="940" height="627">
+</div>
+<div id="wb_Text10">
+<span style="color:#000000;font-family:Arial;font-size:13px;line-height:16px;">.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_FontAwesomeIcon3">
+<a href="./index.html"><div id="FontAwesomeIcon3"><i class="fa fa-pinterest"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon4">
+<a href="./index.html"><div id="FontAwesomeIcon4"><i class="fa fa-instagram"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon5">
+<a href="./index.html"><div id="FontAwesomeIcon5"><i class="fa fa-youtube"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon2">
+<a href="./index.html"><div id="FontAwesomeIcon2"><i class="fa fa-twitter"></i></div></a>
+</div>
+<div id="wb_IconFont1">
+<a href="./index.html"><div id="IconFont1"><i class="fa fa-facebook"></i></div></a>
+</div>
+<div id="wb_Text9">
+<span style="color:#FFFFFF;font-family:Cairo;font-size:13px;line-height:39px;"> شركة مكة لنقل الاثاث </span><span style="color:#FFFFFF;font-family:Cairo;font-size:21px;line-height:39px;">©</span><span style="color:#FFFFFF;font-family:Cairo;font-size:13px;line-height:39px;"> جميع الحقوق محفوظة </span>
+</div>
+</div>
+<div class="col-3">
+</div>
+</div>
+</div>
+</div>
+<div id="Layer2">
+<div id="wb_Image5">
+<a href="tel:01011978449"><img src="images/phone11.png" id="Image5" alt="" width="64" height="70"></a></div>
+</div>
+</body>
+</html>
